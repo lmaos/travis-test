@@ -1,0 +1,16 @@
+language: java
+jdk: openjdk8
+dist: xenial
+
+cache:
+  directories:
+    - '$HOME/.m2/repository'
+
+install:
+  - echo hello_install
+
+script:
+  - echo hello_script
+
+before_deploy: 
+  - echo hello_before_deploy
